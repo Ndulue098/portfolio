@@ -19,13 +19,13 @@ const projects = [
     src: "country.jpg",
     color: "#BBACAF",
   },
-  // {
-  //   title: "Clément Chapillon",
-  // link:"",  
-  // description: "This is a story on the border between reality and imaginary, about the contradictory feelings that the insularity of a rocky, arid, and wild territory provokes”—so French photographer Clément Chapillon describes his latest highly captivating project Les rochers fauves (French for ‘The tawny rocks’).",
-  // src: "comment.jpg",
-  //   color: "#977F6D"
-  // },
+  {
+    title: "Comment Section Clone",
+  link:"https://comment-scetion.vercel.app/",  
+  description: "A functional replica of a modern comment system built with React. The app allows users to post new comments, reply to existing ones, edit their own messages, and delete comments with confirmation prompts. It features nested replies, real-time UI updates, and clean state management to mimic the behavior of popular social platforms.",
+  src: "comment.jpg",
+    color: "#977F6D"
+  },
   {
     title: "Memory Match Game",
     link:"https://memory-game-dusky-nu.vercel.app/",
@@ -42,21 +42,21 @@ const projects = [
   },
   // {
   //   title: "Web Dev Quiz App",
-  // link:"",  
+  // link:"https://frontendquiz-beta.vercel.app/",  
   // description: "An interactive quiz application built with React to test beginners on foundational web development concepts. Users can choose from categories like HTML, CSS, or General Web Knowledge, and answer multiple-choice questions designed to reinforce learning. The app features dynamic question rendering, instant feedback, and a simple, user-friendly interface ideal for newcomers to web development.",
-  //src: "quiz.jpg",
+  // src: "quiz.jpg",
   //   color: "#88A28D"
   // },
-  {
-    title: "Space Exploration Website",
-    link:"https://spacesite-gamma.vercel.app/",
-    description:"The site features a smooth and engaging user experience across four key sections: a landing home page, a destination page for exploring various planets, a technology page highlighting space innovations, and a crew page introducing astronauts. Built with responsive design and seamless routing ",
-    src: "space.jpg",
-    color: "#88A28D",
-  }, 
+  // {
+  //   title: "Space Exploration Website",
+  //   link:"https://spacesite-gamma.vercel.app/",
+  //   description:"The site features a smooth and engaging user experience across four key sections: a landing home page, a destination page for exploring various planets, a technology page highlighting space innovations, and a crew page introducing astronauts. Built with responsive design and seamless routing ",
+  //   src: "space.jpg",
+  //   color: "#88A28D",
+  // }, 
   {
     title: "Todo",
-    link:"https://todo-4b2ap3voe-ndulue-christians-projects.vercel.app/",
+    link:"https://todo-blue-omega.vercel.app/",
     description:"A simple and intuitive React application that allows users to manage their daily tasks efficiently. Users can add, delete, and mark tasks as completed, with real-time UI updates. The app focuses on clean state management, responsive design, and a user-friendly experience to help users stay organized and productive.",
     src: "todo.jpg",
     color: "#88A28D",
@@ -153,7 +153,7 @@ function Card({
     <motion.div
       ref={container}
       style={{ scale: cardScale, top: `calc(-10% + ${i * 25}px)` }}
-      className="card relative group border-[1px] hover:border-b-4 hover:border-lime-300 border-gray-400 flex flex-col rounded-xl p-4 md:p-8 cursor-pointer bg-lightHover 
+      className="card relative group border-[1px] hover:border-b-4 hover:border-b-lime-300 border-gray-400 flex flex-col rounded-xl p-4 md:p-8 cursor-pointer bg-lightHover 
       font-Ovo    dark:border-white   dark:bg-darkHover "
     >
       <h2 className="text-center text-2xl font-bold mb-3 md:mb-6">{title}</h2>
