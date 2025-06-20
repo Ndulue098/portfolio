@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Ovo&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+ 
+
+*{
+  font-family: Outfit;
+}
+.card{
+  position: relative;
+  top: -10%;
+  border-radius: 10px;
+  width: 1100px;
+  height: 500px;
+}
