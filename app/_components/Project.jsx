@@ -153,34 +153,34 @@ function Card({
     <motion.div
       ref={container}
       style={{ scale: cardScale, top: `calc(-10% + ${i * 25}px)` }}
-      className="card relative group border-[1px] hover:border-b-4 hover:border-lime-300 flex flex-col  border-gray-400 rounded-xl p-4 md:p-8 cursor-pointer bg-lightHover 
+      className="card relative group border-[1px] hover:border-b-4 hover:border-lime-300 border-gray-400 flex flex-col rounded-xl p-4 md:p-8 cursor-pointer bg-lightHover 
       font-Ovo    dark:border-white   dark:bg-darkHover "
     >
-      <Link href={link} target="_blank" rel="noopener noreferrer">
       <h2 className="text-center text-2xl font-bold mb-3 md:mb-6">{title}</h2>
-      <div className="flex md:flex-row flex-col h-full gap-6 md:gap-12">
+      <div className="flex md:flex-row flex-col h-full gap-6 md:gap-12 ">
         <div className="md:w-[40%] w-full sm:h-[40%] h-[60%] md:h-full flex flex-col">
           <p className="md:mt-10 mt-3 text-base lg:text-xl sm:text-lg">{description}</p>
 
+            <Link href={link} target="_blank" rel="noopener noreferrer" className="block">
           <div className=" absolute top-0 right-0 translate-x-[-50%] group-hover:bg-lime-300 border mb-auto mt-5 rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:rotate-[43deg]  transition">
             <Image src={assets.send_icon} alt="send icon" className="w-5" />
           </div>
+            </Link>
         </div>
 
-        <div className="md:w-[60%]  w-[full] sm:h-[60%] h-full  md:h-full rounded-xl relative overflow-hidden">
+        <div className="md:w-[60%]  w-full sm:h-[60%] h-full  md:h-full rounded-xl relative overflow-hidden">
           <motion.div style={{ scale: imgScale }} className="w-full h-full relative">
             <Image
-              fill
+              fill 
               src={`/img/${src}`}
               alt=""
               layout="fill"
-              className="absolute object-cover"
+              className="absolute object-cover overflow-hidden"
             />
             {/* <img src={`/img/${src}`} alt="" className="absolute top-0 w-full h-full object-cover" /> */}
           </motion.div>
         </div>
       </div>
-    </Link>
     </motion.div>
   );
 }
