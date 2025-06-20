@@ -150,13 +150,13 @@ function Card({
   const cardScale = useTransform(progress, range, [1, targetScale]);
 
   return (
-    <Link href={link} target="_blank" rel="noopener noreferrer">
     <motion.div
       ref={container}
       style={{ scale: cardScale, top: `calc(-10% + ${i * 25}px)` }}
-      className="card relative group hover:border-b-4 hover:border-lime-300 flex flex-col  border-gray-400 rounded-xl p-4 md:p-8 cursor-pointer bg-lightHover 
-                         font-Ovo    dark:border-white   dark:bg-darkHover "
+      className="card relative group border-[1px] hover:border-b-4 hover:border-lime-300 flex flex-col  border-gray-400 rounded-xl p-4 md:p-8 cursor-pointer bg-lightHover 
+      font-Ovo    dark:border-white   dark:bg-darkHover "
     >
+      <Link href={link} target="_blank" rel="noopener noreferrer">
       <h2 className="text-center text-2xl font-bold mb-3 md:mb-6">{title}</h2>
       <div className="flex md:flex-row flex-col h-full gap-6 md:gap-12">
         <div className="md:w-[40%] w-full sm:h-[40%] h-[60%] md:h-full flex flex-col">
@@ -167,7 +167,7 @@ function Card({
           </div>
         </div>
 
-        <div className="md:w-[60%]  w-full sm:h-[60%] h-full  md:h-full rounded-xl relative overflow-hidden">
+        <div className="md:w-[60%]  w-[full] sm:h-[60%] h-full  md:h-full rounded-xl relative overflow-hidden">
           <motion.div style={{ scale: imgScale }} className="w-full h-full relative">
             <Image
               fill
@@ -180,7 +180,7 @@ function Card({
           </motion.div>
         </div>
       </div>
-    </motion.div>
     </Link>
+    </motion.div>
   );
 }
