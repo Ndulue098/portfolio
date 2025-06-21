@@ -12,16 +12,16 @@ export default function Footer({isDark}) {
                 </div>
             </div>
             <div className="text-center sm:flex items-center justify-between border-t border-gray-400 mx-[10%] mt-12 py-6">
-                <p>&copy; 2025 william Mark. All right Reserved.</p>
+                <p>&copy; 2025 Ndulue Christian. All right Reserved.</p>
                 <ul className="flex items-center gap-10 justify-center mt-4 sm:mt-0">
                     <li>
-                        <a target="_blank" href="">Github</a>
+                        <a target="_blank" href="https://github.com/Ndulue098">Github</a>
                     </li>
                     <li>
-                        <a target="_blank" href="">LinkedIn</a>
+                        <a target="_blank" href="https://www.linkedin.com/in/christian-ndulue-9b95a9228/">LinkedIn</a>
                     </li>
                     <li>
-                        <a target="_blank" href="">Twitter</a>
+                        <a target="_blank" href="https://x.com/Ndulue47">Twitter</a>
                     </li>
                 </ul>
             </div>
