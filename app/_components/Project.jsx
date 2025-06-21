@@ -76,7 +76,7 @@ export default function Project({ isDark }) {
   }, [scrollYProgress]);
 
   return (
-    <main ref={container} id="Work" className={`mt-[20vh] font-Ovo px-3 sm:px-6 `}>
+    <main ref={container} id="Work" className={`mt-[10vh] font-Ovo px-3 sm:px-6 `}>
       <motion.h4
         initial={{ y: -20, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}

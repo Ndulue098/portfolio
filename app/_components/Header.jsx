@@ -10,7 +10,7 @@ export default function Header() {
             transition={{duration:0.8,type:"spring",stiffness:100}}
             viewport={{ once: true }}
             >
-                <Image src={assets.profile_img} alt="" className="rounded-full w-32"/>
+                <Image src={assets.me} alt="" className=" rounded-full object-cover bg-cover top-0  object-right-top w-[9rem] h-[9rem]"/> 
             </motion.div>
             <motion.h3
             initial={{y:-20, opacity:0}}
@@ -46,7 +46,7 @@ export default function Header() {
                 whileInView={{y:0,opacity:1}}   
                 transition={{duration:0.6,delay:1}}
                 viewport={{ once: true }}
-                href="#contact" className="px-10 py-3 border border-white rounded-full bg-black text-white flex items-center gap-2 dark:bg-transparent">
+                href="#Contact" className="px-10 py-3 border border-white rounded-full bg-black text-white flex items-center gap-2 dark:bg-transparent">
                     contact me
                 </motion.a>
                 {/* download the file pdf */}
@@ -55,7 +55,7 @@ export default function Header() {
                 whileInView={{y:0,opacity:1}}   
                 transition={{duration:0.6,delay:1.2}}
                 viewport={{ once: true }}
-                href="/sample-resume.pdf" download className="px-10 py-3 border rounded-full border-gray-500 flex items-center gap-2 bg-white dark:text-black">
+                href="/Ndulue MChristi.pdf" download className="px-10 py-3 border rounded-full border-gray-500 flex items-center gap-2 bg-white dark:text-black">
                     my Resume
                     <Image className="w-4" src={assets.download_icon} alt="" />
                 </motion.a>

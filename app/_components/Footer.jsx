@@ -1,11 +1,11 @@
 import { assets } from "@/assets/assets";
 import Image from "next/image";
+import Logo from "./Logo";
 
 export default function Footer({isDark}) {
     return <div id="Footer" className="mt-20">
             <div className="text-center">
-                <Image src={isDark?assets.logo_dark:assets.logo} alt="" className="w-36 mx-auto mb-2"/>
-
+                <Logo/>
                 <div className="w-max flex items-center gap-2 mx-auto">
                     <Image src={isDark? assets.mail_icon_dark :assets.mail_icon} alt="" className="w-6"/>
                     christianndulue47@gmail.com

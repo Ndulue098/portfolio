@@ -3,6 +3,7 @@ import { assets } from "@/assets/assets";
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
+import Logo from "./Logo";
 
 // TODO notice the fixed class 
 // TODO steal the !assets.header_bg_color 
@@ -38,9 +39,8 @@ export default function NavBar({setDark,isDark}) {
             </div>
                                                 {/* //todo here if for the scroll past 50 height */}
             <nav className={`${isScroll?"bg-white bg-opacity-50 backdrop-blur-lg shadow-sm dark:bg-darkTheme dark:shadow-white/20":""} w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50`}>
-                <Link href="#top" >
-                    <Image src={isDark?assets.logo_dark:assets.logo} alt="Logo" className="w-28 cursor-pointer mr-14" />
-                </Link> 
+                
+                <Logo/>
                 <ul className={`hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3
                     ${!isScroll&& "bg-white  shadow-sm bg-opacity-50 dark:bg-darkTheme dark:border dark:border-white/50 dark:bg-transparent"}`}>
                     <li>

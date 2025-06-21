@@ -56,7 +56,7 @@ Over the past five months, I’ve dedicated myself to growing as a Frontend Deve
           className="w-64 sm:w-80 rounded-3xl max-w-none"
         >
           <Image
-            src={assets.user_image}
+            src={assets.me}
             alt="user"
             className="w-full rounded-3xl"
           />
